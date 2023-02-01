@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///D:/Desktop2/Editler/HTML/Anndac/Deneme3/main.html -->
+<html lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Fotograf Yukle!</title>
+        <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.5/firebase.js"></script>
+
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="ANAGUVENLIK.js"></script>
+    </head>
+    <body onload="BgYukleme(); GUVENLIKKONTROL()">
+        
+
+
+        <div class="ImgHolderContainer">
+            <img class="IMAGEHOLDER" id="img">
+        </div>
+        
+        <div class="UploadUiKismiContainer">
+            <div class="topnav">
+                <a onclick="AkisBtnClick()"  class="active"  >Akış</a>
+                <a onclick="FotolarimBtnClick()" >Fotoğraflarım</a>
+                <a onclick="HesapBtnClick()">Hesap</a>
+                <a >Hakkında</a>
+              </div>
+            <label class="yuzdelikLabel" id="yuzdelikLabel">Yükleme Yok</label>
+            <button onclick="uploadImage();GUVENLIKKONTROL() " class="gonderButton">Gönder!</button>
+            <input onclick="FileAlButtonClick()" type="file" class="inputFile" id="fileInp" onchange="getFile(event)" accept="image/png, image/gif, image/JPG, image/jpeg">
+            
+            <label for="fileInp">Fotoğraf Seç!</label>
+            <span class="fileText">
+        </span></div>
+        
+    
+    </body></html>

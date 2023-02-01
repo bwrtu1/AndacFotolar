@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Sayfasi</title>
+    <link rel="stylesheet" href="account.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.5/firebase.js"></script>
+        <script type="text/javascript" src="ANAGUVENLIK.js"></script>
+        <script src="/account.js"></script>
+</head>
+<body onload="HesapKontrol() ; GUVENLIKKONTROL()">
+
+    <div class="AccountKismiContainer">
+        <div class="HesapBilgisiContainer">
+            <h1 id="HESAPADILABEL" class="HspAdLbl">HESAP ADI</h1>
+            <h6 id="SINIFLABEL" class="SnfLbl">Sinif</h6>
+            <h6 id="EMAILABEL" class="SnfLbl">Email</h6>
+        </div>
+        <div class="HesapIslemleriContainer">
+            <a>Yeni Sifre:</a>
+            <input type="password" placeholder="Yeni Sifre" id="EskSfrInp" autocomplete="off" class="SfrInpEski">
+            <a class="YeniSfrLbl">Yeni Sifre Yeniden:</a>
+            <input type="password" autocomplete="off" placeholder="Yeni Sifre Yeniden" id="YenSfrInp" class="SfrInpYeni">
+            <button  type="text" id="SfrBtn" onclick="SifreDegistirBtnClick()" class="CksBtn">SifreyiDegistir</button>
+            <button type="text" onclick="CikisYapButtonClick()" class="CksBtn">Çıkış Yap</button>
+
+        
+        </div>
+    </div>
+
+    <div class="UploadUiKismiContainer">
+        <div class="topnav">
+            <a onclick="AkisClick()" class="active" href="file:///D:/Desktop2/Editler/HTML/Anndac/Deneme3/main.html#Akis">Akış</a>
+            <a onclick="FotolarimClick()" href="file:///D:/Desktop2/Editler/HTML/Anndac/Deneme3/main.html#Fotolarim">Fotoğraflarım</a>
+            <a href="file:///D:/Desktop2/Editler/HTML/Anndac/Deneme3/main.html#about">Hakkında</a>
+            <a class="AnaSayfa" onclick="AnaySafyaBtnClick()">Ana Sayfa</a>
+        </div>
+    </div>
+</body>
+</html>
