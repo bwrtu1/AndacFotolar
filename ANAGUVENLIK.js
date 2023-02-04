@@ -4,7 +4,7 @@ function GUVENLIKKONTROL(){
             console.log('Sifre Ek Kontrolu Dogru');
         }else{
             console.log("Sifre Degismis");
-            alert("Sifreniz Degimis. Lutfen Yeniden Giris Yapiniz");
+            alert("Sifreniz Değiştirilmiş. Lutfen Yeniden Giris Yapiniz");
             localStorage.clear();
             window.open("index.html","_self")
         }
